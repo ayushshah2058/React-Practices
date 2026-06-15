@@ -1,0 +1,85 @@
+
+/* ─── HEADER ─── */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+span{
+    background: linear-gradient(270deg, #00ff6a, #37ff00aa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* color: transparent; */
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hamburger icon */
+#menu-icon {
+    font-size: 3.2rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+    z-index: 1100;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: white;
+    margin-left: 2rem;
+    font-weight: 450;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 2rem;
+    background: linear-gradient(270deg, var(--main-color), #37ff00aa);
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
